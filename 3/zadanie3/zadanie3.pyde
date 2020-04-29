@@ -13,7 +13,7 @@ def setup():
     zmiana_kolorow = False
     noFill()
     stroke("#FF1493")
-    circle(325,290,160)
+    circle(325,290,160) # do niestandardowych kształtów zaliczyć nie mogę
    
 def draw():
     if mysz(pierwsza_pozycja[0], pierwsza_pozycja[1]) == True:
@@ -25,9 +25,7 @@ def draw():
     else:
         drugi_kolor = 0
     if zmiana_kolorow == True:
-        temp = pierwszy_kolor
-        pierwszy_kolor = drugi_kolor
-        drugi_kolor = temp
+        pierwszy_kolor, drugi_kolor = drugi_kolor, pierwszy_kolor #rónoważny pythonowy zapis
     fill(kolorki[pierwszy_kolor])
     text(pierwsza_litera, pierwsza_pozycja[0], pierwsza_pozycja[1] + 75)
     fill(kolorki[drugi_kolor])
@@ -61,3 +59,7 @@ def mysz(a, b):
             return False
     else:
         return False
+    
+# dało się prościej, ale doceniam fantazję :)
+# napewno na wszystko sam wpadłeś?
+# 1,75p
