@@ -7,13 +7,13 @@ class Kwadrat():
         rect(self.x, self.y, self.bok, self.bok)
         
                     
-class KropkiKwadrat(Kwadrat):
-    def sketchKropki (self, x, y, Kropki): 
+class KropkiKwadrat(Kwadrat): # nie widzę dopisanej klasy a zmianę nazw w mojej...
+    def sketchKropki (self, x, y, kropki): 
         Kwadrat.sketch(self, x, y)
-        space = self.bok/Kropki
+        space = self.bok/kropki
         _xKropki_ = 0
         for dot in range(0, kropki):
-            dot(x+_xKropki_, y, x+_xKropki_, y+self.bok)
+            dot(x+_xKropki_, y, x+_xKropki_, y+self.bok) # nie znajduję takiej metody w referencjach processingu...
             _xKropki_ +=space
 
 def setup():
@@ -30,5 +30,7 @@ def setup():
     duzyKropkiKwadrat = KropkiKwadrat(120.0)
     duzyKropkiKwadrat.sketchKropki(300, 50, 12)
     duzyKropkiKwadrat.sketch(350, 300)
+
+# 0,25pkt
     
     
