@@ -56,3 +56,4 @@ def mouseClicked():
             library.lendBook(Kacper.requestBook("Pielgrzym")) 
         if mouseY >40 and mouseY <60:
             library.addBook(Kacper.returnBook())
+# 0,25/0,5 za tą część - zamiast dopisać zastąpiłeś
