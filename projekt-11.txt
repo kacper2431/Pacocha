@@ -1,0 +1,12 @@
+STUDIO GAMEDEV
+Grafik tworzy nowe assety do tworzonej przez firmę gry.
+Dyrektor każe zmienić styl grafik, do czego potrzebne są nowe wtyczki lub oprogramowanie
+Grafik pobiera wtyczki do programu w którym pracuje i może kontynuować swoją pracę
+WZORZEC: OBSERWATOR
+DLACZEGO: Program obsługuje dodawanie wtyczek, co pozwala grafikom manewrować między stylami
+co ma wpływ na końcową pracę. Nie opłaca się kupować nowego oprogramowania, ponieważ byłyby to 
+dodatkowe koszty dla firmy, których najlepiej uniknąć, a zaoszczędzone pieniądze zainwestować bardziej
+przydatne narzędzia.
+
+Reszta roku oceniłą jako adapter. Zgodzę się ,że to bardziej obserwator, jednak ten wymaga nowej sytuacji, któą może zaobserwować element trzeci i która będzie wyzwalaczem do zmiany sytuacji. Tu nie jest to odpowiednio pokreślone w scenariuszu.
+0,5pkt
